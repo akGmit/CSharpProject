@@ -82,6 +82,10 @@ namespace App18
                 }
             }
         }
-        
+
+        private void Button_DeleteAll(object sender, RoutedEventArgs e)
+        {
+            storage.DeleteAllStorage();
+        }
     }
 }

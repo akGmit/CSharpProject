@@ -22,6 +22,8 @@ namespace App18
     /// </summary>
     public sealed partial class FileViewer : Page
     {
+        String document;
+
         public FileViewer()
         {
             this.InitializeComponent();
@@ -32,14 +34,19 @@ namespace App18
         {
             base.OnNavigatedTo(e);
 
-            String doc = (String)e.Parameter;
+            document = (String)e.Parameter;
 
-            content.Text = doc;           
+            content.Text = document;           
         }
 
         private void AppBarButton_GoBack(object sender, RoutedEventArgs e)
         {
             Frame.GoBack();
+        }
+
+        private void AppBarButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

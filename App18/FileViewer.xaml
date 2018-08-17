@@ -13,8 +13,11 @@
             <RowDefinition Height="2*" MinHeight="80"></RowDefinition>
             <RowDefinition Height="19*"></RowDefinition>
         </Grid.RowDefinitions>
-        <AppBarButton Grid.Row="0" HorizontalAlignment="Left" Icon="Save" Label="Go Back" VerticalAlignment="Stretch" Click="AppBarButton_GoBack"/>
-        <TextBox x:Name="content" Grid.Row="1" HorizontalAlignment="Stretch"  TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollBarVisibility="Visible"/>
+        <StackPanel Orientation="Horizontal">
+            <AppBarButton Grid.Row="0" HorizontalAlignment="Left" Icon="Back" Label="Go Back" VerticalAlignment="Stretch" Click="AppBarButton_GoBack"/>
+            <AppBarButton Grid.Row="0" HorizontalAlignment="Left" Icon="Save" Label="Save" VerticalAlignment="Stretch" Click="AppBarButton_Click"/>
+        </StackPanel>
+        <TextBox x:Name="content" Grid.Row="1" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollBarVisibility="Visible"/>
 
 
     </Grid>

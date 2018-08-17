@@ -28,6 +28,20 @@ namespace App18.Assets
             Delete(fileName);
         }
 
+        public void DeleteAllStorage()
+        {
+            DeleteAll();
+        }
+
+        private async void DeleteAll()
+        {
+            IReadOnlyList<StorageFile> files = await localFolder.GetFilesAsync();
+            foreach (StorageFile file in files)
+            {
+                Delete(file.DisplayName);
+            }
+        }
+
         private async void Delete(String fileName)
         {
             StorageFile deleteFile = await localFolder.GetFileAsync(fileName);
