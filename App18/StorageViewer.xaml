@@ -8,9 +8,22 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+
     <Grid>
-        <ListBox x:Name="storageList" HorizontalAlignment="Left" Height="500" Margin="490,114,0,0" VerticalAlignment="Top" SelectionChanged="storageList_SelectionChanged" ScrollViewer.VerticalScrollBarVisibility="Visible"/>
-        <TextBlock x:Name="text" HorizontalAlignment="Left" Margin="112,331,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-        <AppBarButton HorizontalAlignment="Left" Icon="Accept" Label="AppBarButton" Margin="99,116,0,0" VerticalAlignment="Top" Click="AppBarButton_Click"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" MinHeight="80"></RowDefinition>
+            <RowDefinition Height="19*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="1">
+            <TextBlock Text="Select a file:"></TextBlock>
+            <ListBox x:Name="storageList" Grid.Row="1" HorizontalAlignment="Stretch" MaxHeight="200" VerticalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible"/>
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal">
+            <AppBarButton HorizontalAlignment="Left" Icon="Accept" Label="Go to View" VerticalAlignment="Stretch" Click="AppBarButton_GoToView"/>
+            <AppBarButton HorizontalAlignment="Left" Icon="Accept" Label="Open" VerticalAlignment="Stretch" Click="AppBarButton_SaveDocument"/>
+            <AppBarButton HorizontalAlignment="Stretch" Icon="Accept" Label="Delete" VerticalAlignment="Stretch" d:LayoutOverrides="Width" Click="AppBarButton_DeleteDocument"/>
+        </StackPanel>
+       
     </Grid>
 </Page>

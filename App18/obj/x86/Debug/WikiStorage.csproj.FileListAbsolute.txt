@@ -231,3 +231,4 @@ c:\users\o\source\repos\App18\App18\obj\x86\Debug\qualifiers.txt.intermediate
 c:\users\o\source\repos\App18\App18\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 c:\users\o\source\repos\App18\App18\obj\x86\Debug\HtmlAgilityPack.pri.xml
 c:\users\o\source\repos\App18\App18\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\o\source\repos\App18\App18\obj\x86\Debug\WikiStorage.csprojAssemblyReference.cache

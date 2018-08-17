@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>4e16f420-280c-49e2-a78a-f3691151e5c6</PackageIdentityName>
     <PackageIdentityPublisher>CN=o</PackageIdentityPublisher>
-    <IntermediateOutputPath>c:\users\o\source\repos\App18\App18\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\o\source\repos\App18\App18\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>c:\users\o\source\repos\App18\App18\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\o\source\repos\App18\App18\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="c:\users\o\source\repos\App18\App18\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\o\source\repos\App18\App18\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="c:\users\o\source\repos\App18\App18\bin\x86\Debug\WikiStorage.exe">
+    <AppxPackagedFile Include="C:\Users\o\source\repos\App18\App18\bin\x86\Debug\WikiStorage.exe">
       <PackagePath>entrypoint\WikiStorage.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\o\.nuget\packages\htmlagilitypack\1.8.6\lib\uap10.0\HtmlAgilityPack.dll">
@@ -382,59 +382,59 @@
     <AppxPackagedFile Include="C:\Users\o\.nuget\packages\system.xml.xpath.xmldocument\4.3.0\lib\netstandard1.3\System.Xml.XPath.XmlDocument.dll">
       <PackagePath>System.Xml.XPath.XmlDocument.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\o\source\repos\App18\App18\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\o\source\repos\App18\App18\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\o\source\repos\App18\App18\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\o\source\repos\App18\App18\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\o\source\repos\App18\App18\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\o\source\repos\App18\App18\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\o\source\repos\App18\App18\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\o\source\repos\App18\App18\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\o\source\repos\App18\App18\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\o\source\repos\App18\App18\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\o\source\repos\App18\App18\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\o\source\repos\App18\App18\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\o\source\repos\App18\App18\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\o\source\repos\App18\App18\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\o\source\repos\App18\App18\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\o\source\repos\App18\App18\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\o\source\repos\App18\App18\bin\x86\Debug\WikiStorage.xr.xml">
+    <AppxPackagedFile Include="C:\Users\o\source\repos\App18\App18\bin\x86\Debug\WikiStorage.xr.xml">
       <PackagePath>WikiStorage.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\o\source\repos\App18\App18\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\o\source\repos\App18\App18\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\o\source\repos\App18\App18\bin\x86\Debug\FileViewer.xbf">
+    <AppxPackagedFile Include="C:\Users\o\source\repos\App18\App18\bin\x86\Debug\FileViewer.xbf">
       <PackagePath>FileViewer.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\o\source\repos\App18\App18\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\o\source\repos\App18\App18\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\o\source\repos\App18\App18\bin\x86\Debug\StorageViewer.xbf">
+    <AppxPackagedFile Include="C:\Users\o\source\repos\App18\App18\bin\x86\Debug\StorageViewer.xbf">
       <PackagePath>StorageViewer.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\o\source\repos\App18\App18\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\o\source\repos\App18\App18\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\o\source\repos\App18\App18\bin\x86\Debug\Core\WikiStorage.exe">
+    <AppxPackagedFile Include="C:\Users\o\source\repos\App18\App18\bin\x86\Debug\Core\WikiStorage.exe">
       <PackagePath>WikiStorage.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

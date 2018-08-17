@@ -32,8 +32,7 @@ namespace App18
         public MainPage()
         {
             this.InitializeComponent();           
-            wikiView.Navigate(new Uri("http://www.wikipedia.com"));
-            
+            wikiView.Navigate(new Uri("http://www.wikipedia.com"));          
         }
 
         private void AppBarButton_SaveDocument(object sender, RoutedEventArgs e)
@@ -66,13 +65,9 @@ namespace App18
                 var dialog = new MessageDialog("Document not suitable for saving.");
                 await dialog.ShowAsync();
             }
-               
-            
+                        
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
+       
     }
 }

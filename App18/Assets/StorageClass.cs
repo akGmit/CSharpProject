@@ -23,6 +23,18 @@ namespace App18.Assets
             CreateFile(fileName, text);
         }
 
+        public void DeleteDocument(String fileName)
+        {
+            Delete(fileName);
+        }
+
+        private async void Delete(String fileName)
+        {
+            StorageFile deleteFile = await localFolder.GetFileAsync(fileName);
+            if (deleteFile != null)
+                await deleteFile.DeleteAsync();
+        }
+
         private async void CreateFile(String fileName, String text)
         {
             StorageFile newFile = await localFolder.CreateFileAsync(fileName, CreationCollisionOption.GenerateUniqueName);

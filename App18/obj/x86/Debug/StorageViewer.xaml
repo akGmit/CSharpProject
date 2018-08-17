@@ -8,10 +8,23 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+
     <Grid>
-        <ListBox x:ConnectionId='1' x:Name="storageList" HorizontalAlignment="Left" Height="500" Margin="490,114,0,0" VerticalAlignment="Top"                                                 ScrollViewer.VerticalScrollBarVisibility="Visible"/>
-        <TextBlock x:ConnectionId='2' x:Name="text" HorizontalAlignment="Left" Margin="112,331,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-        <AppBarButton x:ConnectionId='3' HorizontalAlignment="Left" Icon="Accept" Label="AppBarButton" Margin="99,116,0,0" VerticalAlignment="Top"                           />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" MinHeight="80"></RowDefinition>
+            <RowDefinition Height="19*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="1">
+            <TextBlock Text="Select a file:"></TextBlock>
+            <ListBox x:ConnectionId='4' x:Name="storageList" Grid.Row="1" HorizontalAlignment="Stretch" MaxHeight="200" VerticalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible"/>
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal">
+            <AppBarButton x:ConnectionId='1' HorizontalAlignment="Left" Icon="Accept" Label="Go to View" VerticalAlignment="Stretch"                              />
+            <AppBarButton x:ConnectionId='2' HorizontalAlignment="Left" Icon="Accept" Label="Open" VerticalAlignment="Stretch"                                  />
+            <AppBarButton x:ConnectionId='3' HorizontalAlignment="Stretch" Icon="Accept" Label="Delete" VerticalAlignment="Stretch" d:LayoutOverrides="Width"                                    />
+        </StackPanel>
+       
     </Grid>
 </Page>
 

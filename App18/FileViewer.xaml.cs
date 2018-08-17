@@ -34,9 +34,12 @@ namespace App18
 
             String doc = (String)e.Parameter;
 
-            content.Text = doc;
+            content.Text = doc;           
+        }
 
-            
+        private void AppBarButton_GoBack(object sender, RoutedEventArgs e)
+        {
+            Frame.GoBack();
         }
     }
 }

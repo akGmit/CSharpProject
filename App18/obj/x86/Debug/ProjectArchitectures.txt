@@ -1,1 +1,1 @@
-c:\users\o\source\repos\App18\App18\WikiStorage.csproj;x86
+C:\Users\o\source\repos\App18\App18\WikiStorage.csproj;x86

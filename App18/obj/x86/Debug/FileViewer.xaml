@@ -9,7 +9,12 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBox x:ConnectionId='1' x:Name="content" HorizontalAlignment="Stretch"  TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollBarVisibility="Visible"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" MinHeight="80"></RowDefinition>
+            <RowDefinition Height="19*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <AppBarButton x:ConnectionId='1' Grid.Row="0" HorizontalAlignment="Left" Icon="Save" Label="Go Back" VerticalAlignment="Stretch"                            />
+        <TextBox x:ConnectionId='2' x:Name="content" Grid.Row="1" HorizontalAlignment="Stretch"  TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollBarVisibility="Visible"/>
 
 
     </Grid>

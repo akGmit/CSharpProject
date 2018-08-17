@@ -40,23 +40,14 @@ namespace App18
             foreach (StorageFile file in storageFiles)
             {
                 storageList.Items.Add(file.DisplayName);
-                //storageList.Items.Add(file.DisplayName);
             }
         }
 
-        private void storageList_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            text.Text = storageList.SelectedItem.ToString();
-        }
-
-        private void AppBarButton_Click(object sender, RoutedEventArgs e)
+        private void AppBarButton_SaveDocument(object sender, RoutedEventArgs e)
         {
             if (storageList.SelectedIndex != -1)
             {
                 string doc = System.IO.File.ReadAllText(storage.localFolder.Path + "/" + storageList.SelectedItem.ToString());
-
-                text.Text = doc;
-
                 Frame.Navigate(typeof(FileViewer), doc);
             }
             else
@@ -69,5 +60,28 @@ namespace App18
                 }
             }
         }
+
+        private void AppBarButton_GoToView(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MainPage));
+        }
+
+        private void AppBarButton_DeleteDocument(object sender, RoutedEventArgs e)
+        {
+            if (storageList.SelectedIndex != -1)
+            {
+                storage.DeleteDocument(storageList.SelectedItem.ToString());
+            }
+            else
+            {
+                var dialog = new MessageDialog("Select file to delete.");
+                noFileSelected();
+                async void noFileSelected()
+                {
+                    await dialog.ShowAsync();
+                }
+            }
+        }
+        
     }
 }
