@@ -8,20 +8,19 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid x:ConnectionId='1' x:Name="rootGrid">
         <Grid.RowDefinitions>
             <RowDefinition Height="2*" MinHeight="80"></RowDefinition>
             <RowDefinition Height="19*"></RowDefinition>
         </Grid.RowDefinitions>
-        <WebView x:ConnectionId='1' x:Name="wikiView" Grid.Row="1" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" />
+        
+        <WebView x:ConnectionId='2' x:Name="wikiView" Grid.Row="1" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" />
+        
         <StackPanel Orientation="Horizontal" >
-            <AppBarButton x:ConnectionId='2' Grid.Row="0" HorizontalAlignment="Left" Icon="Save" Label="Save Document" VerticalAlignment="Stretch"                                  />
-
-
-            <AppBarButton x:ConnectionId='3' HorizontalAlignment="Left" Icon="View" Label="View Storage" VerticalAlignment="Stretch"                                 />
+            <AppBarButton x:ConnectionId='3' Grid.Row="0" HorizontalAlignment="Left" Icon="Save" Label="Save Document" VerticalAlignment="Stretch"                                  />
+            <AppBarButton x:ConnectionId='4' HorizontalAlignment="Left" Icon="View" Label="View Storage" VerticalAlignment="Stretch"                                 />
+            <AppBarButton x:ConnectionId='5' HorizontalAlignment="Left" Icon="View" Label="File Viewer" VerticalAlignment="Stretch"                           />
         </StackPanel>
-            
-
     </Grid>
 </Page>
 

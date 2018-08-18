@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Windows.Storage;
-using App18;
-using HtmlAgilityPack;
 
 namespace App18.Assets
 {
@@ -44,15 +39,21 @@ namespace App18.Assets
 
         private async void Delete(String fileName)
         {
-            StorageFile deleteFile = await localFolder.GetFileAsync(fileName);
+            StorageFile deleteFile = await localFolder.GetFileAsync(fileName+".txt");
             if (deleteFile != null)
                 await deleteFile.DeleteAsync();
         }
 
         private async void CreateFile(String fileName, String text)
         {
-            StorageFile newFile = await localFolder.CreateFileAsync(fileName, CreationCollisionOption.GenerateUniqueName);
+            StorageFile newFile = await localFolder.CreateFileAsync(fileName+".txt", CreationCollisionOption.GenerateUniqueName);
             await Windows.Storage.FileIO.WriteTextAsync(newFile, text);
         }
+
+        public async void ImportFile(StorageFile newFile)
+        {
+            await newFile.CopyAsync(localFolder, newFile.Name, NameCollisionOption.GenerateUniqueName);         
+        }
+            
     }
 }

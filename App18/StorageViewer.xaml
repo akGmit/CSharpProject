@@ -20,24 +20,20 @@
         </StackPanel>
         
         <StackPanel Orientation="Horizontal">
-            <AppBarButton HorizontalAlignment="Left" Icon="Accept" Label="Go to View" VerticalAlignment="Stretch" Click="AppBarButton_GoToView"/>
-            <AppBarButton HorizontalAlignment="Left" Icon="Accept" Label="Open" VerticalAlignment="Stretch" Click="AppBarButton_SaveDocument"/>
-            <AppBarButton HorizontalAlignment="Stretch" Icon="Accept" Label="Delete" VerticalAlignment="Stretch" d:LayoutOverrides="Width" Click="AppBarButton_DeleteDocument"/>
-            <AppBarButton HorizontalAlignment="Stretch" Icon="Accept" Label="Delete All" VerticalAlignment="Stretch" d:LayoutOverrides="Width" >
-                <AppBarButton.Resources>
-                    <Flyout x:Key="FlyoutBase1">
-                        <Grid Height="auto" Width="auto">
-                            <StackPanel>
-                                <TextBlock Text="All Files will be deleted permanently"></TextBlock>
-                                <Button Click="Button_DeleteAll" HorizontalAlignment="Center">
-                                    Delete All
-                                </Button>
+            <AppBarButton HorizontalAlignment="Left" Icon="Accept" Label="Go to View" VerticalAlignment="Stretch" Click="AppBarButton_GoToMain"/>
+            <AppBarButton HorizontalAlignment="Left" Icon="OpenFile" Label="Open" VerticalAlignment="Stretch" Click="AppBarButton_ViewDocument"/>
+            <AppBarButton HorizontalAlignment="Left" Icon="OpenFile" Label="Import Document" VerticalAlignment="Stretch" Click="AppBarButton_Import"/>
+            <AppBarButton HorizontalAlignment="Stretch" Icon="Delete" Label="Delete" VerticalAlignment="Stretch" d:LayoutOverrides="Width" Click="AppBarButton_DeleteDocument"/>
+            <AppBarButton HorizontalAlignment="Stretch" Icon="Delete" Label="Delete All" VerticalAlignment="Stretch" d:LayoutOverrides="Width">
+                <AppBarButton.Flyout>
+                    <Flyout>
+                        <Grid Height="auto" Width="100">
+                            <StackPanel Orientation="Vertical">
+                                <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" Text="All storage files will be deleted!" VerticalAlignment="Top"/>
+                                <Button Content="Button" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="Button_DeleteAll"/>
                             </StackPanel>
                         </Grid>
                     </Flyout>
-                </AppBarButton.Resources>
-                <AppBarButton.Flyout>
-                    <StaticResource ResourceKey="FlyoutBase1"/>
                 </AppBarButton.Flyout>
             </AppBarButton>
         </StackPanel>
