@@ -22,7 +22,7 @@
         <StackPanel Orientation="Horizontal">
             <AppBarButton HorizontalAlignment="Left" Icon="GoToStart" Label="Go to Main Page" VerticalAlignment="Stretch" Click="AppBarButton_GoToMain"/>
             <AppBarButton HorizontalAlignment="Left" Icon="OpenFile" Label="Open" VerticalAlignment="Stretch" Click="AppBarButton_ViewDocument"/>
-            <AppBarButton HorizontalAlignment="Left" Icon="OpenFile" Label="Import Document" VerticalAlignment="Stretch" Click="AppBarButton_Import"/>
+            <AppBarButton HorizontalAlignment="Left" Icon="Import" Label="Import Document" VerticalAlignment="Stretch" Click="AppBarButton_Import"/>
             <AppBarButton HorizontalAlignment="Stretch" Icon="Delete" Label="Delete" VerticalAlignment="Stretch" d:LayoutOverrides="Width" Click="AppBarButton_DeleteDocument"/>
             <AppBarButton HorizontalAlignment="Stretch" Icon="Delete" Label="Delete All" VerticalAlignment="Stretch" d:LayoutOverrides="Width">
                 <AppBarButton.Flyout>
@@ -36,7 +36,7 @@
                     </Flyout>
                 </AppBarButton.Flyout>
             </AppBarButton>
-            <AppBarButton HorizontalAlignment="Right" Icon="View" Label="Settings" VerticalAlignment="Stretch" Click="AppBarButton_Settings"/>
+            <AppBarButton HorizontalAlignment="Right" Icon="Setting" Label="Settings" VerticalAlignment="Stretch" Click="AppBarButton_Settings"/>
         </StackPanel>
        
     </Grid>
