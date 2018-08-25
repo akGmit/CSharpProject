@@ -16,10 +16,11 @@
         
         <WebView x:Name="wikiView" Grid.Row="1" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" />
         
-        <StackPanel Orientation="Horizontal" >
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
             <AppBarButton Grid.Row="0" HorizontalAlignment="Left" Icon="Save" Label="Save Document" VerticalAlignment="Stretch" Click="AppBarButton_SaveDocument"/>
-            <AppBarButton HorizontalAlignment="Left" Icon="View" Label="View Storage" VerticalAlignment="Stretch" Click="AppBarButton_ViewStorage"/>
-            <AppBarButton HorizontalAlignment="Left" Icon="View" Label="File Viewer" VerticalAlignment="Stretch" Click="AppBarButton_Click"/>
+            <AppBarButton HorizontalAlignment="Left" Icon="Folder" Label="View Storage" VerticalAlignment="Stretch" Click="AppBarButton_ViewStorage"/>
+            <AppBarButton HorizontalAlignment="Left" Icon="OpenFile" Label="File Viewer" VerticalAlignment="Stretch" Click="AppBarButton_FileViewer"/>
+            <AppBarButton HorizontalAlignment="Right" Icon="Setting" Label="Settings" VerticalAlignment="Stretch" Click="AppBarButton_Settings"/>
         </StackPanel>
     </Grid>
 </Page>

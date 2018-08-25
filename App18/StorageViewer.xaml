@@ -9,7 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
 
-    <Grid>
+    <Grid x:Name="rootGrid">
         <Grid.RowDefinitions>
             <RowDefinition Height="2*" MinHeight="80"></RowDefinition>
             <RowDefinition Height="19*"></RowDefinition>
@@ -20,7 +20,7 @@
         </StackPanel>
         
         <StackPanel Orientation="Horizontal">
-            <AppBarButton HorizontalAlignment="Left" Icon="Accept" Label="Go to View" VerticalAlignment="Stretch" Click="AppBarButton_GoToMain"/>
+            <AppBarButton HorizontalAlignment="Left" Icon="GoToStart" Label="Go to Main Page" VerticalAlignment="Stretch" Click="AppBarButton_GoToMain"/>
             <AppBarButton HorizontalAlignment="Left" Icon="OpenFile" Label="Open" VerticalAlignment="Stretch" Click="AppBarButton_ViewDocument"/>
             <AppBarButton HorizontalAlignment="Left" Icon="OpenFile" Label="Import Document" VerticalAlignment="Stretch" Click="AppBarButton_Import"/>
             <AppBarButton HorizontalAlignment="Stretch" Icon="Delete" Label="Delete" VerticalAlignment="Stretch" d:LayoutOverrides="Width" Click="AppBarButton_DeleteDocument"/>
@@ -36,6 +36,7 @@
                     </Flyout>
                 </AppBarButton.Flyout>
             </AppBarButton>
+            <AppBarButton HorizontalAlignment="Right" Icon="View" Label="Settings" VerticalAlignment="Stretch" Click="AppBarButton_Settings"/>
         </StackPanel>
        
     </Grid>

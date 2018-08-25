@@ -424,6 +424,9 @@
     <AppxPackagedFile Include="C:\Users\o\source\repos\App18\App18\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\o\source\repos\App18\App18\bin\x86\Debug\SettingsPage.xbf">
+      <PackagePath>SettingsPage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\o\source\repos\App18\App18\bin\x86\Debug\StorageViewer.xbf">
       <PackagePath>StorageViewer.xbf</PackagePath>
     </AppxPackagedFile>

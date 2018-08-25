@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\o\source\repos\App18\App18\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-08-18T16:30:08.894</Modified>
+      <Modified>2018-08-25T17:20:17.313</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\o\source\repos\App18\App18\bin\x86\Debug\WikiStorage.exe">
       <PackagePath>entrypoint\WikiStorage.exe</PackagePath>
-      <Modified>2018-08-18T16:30:08.221</Modified>
+      <Modified>2018-08-25T17:20:16.624</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\o\.nuget\packages\htmlagilitypack\1.8.6\lib\uap10.0\HtmlAgilityPack.dll">
       <PackagePath>HtmlAgilityPack.dll</PackagePath>
@@ -551,7 +551,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\o\source\repos\App18\App18\bin\x86\Debug\WikiStorage.xr.xml">
       <PackagePath>WikiStorage.xr.xml</PackagePath>
-      <Modified>2018-08-18T15:52:00.367</Modified>
+      <Modified>2018-08-25T16:16:19.769</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\o\source\repos\App18\App18\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
@@ -559,15 +559,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\o\source\repos\App18\App18\bin\x86\Debug\FileViewer.xbf">
       <PackagePath>FileViewer.xbf</PackagePath>
-      <Modified>2018-08-18T15:39:01.684</Modified>
+      <Modified>2018-08-25T16:33:44.565</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\o\source\repos\App18\App18\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2018-08-18T16:12:07.060</Modified>
+      <Modified>2018-08-25T16:33:44.566</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\o\source\repos\App18\App18\bin\x86\Debug\SettingsPage.xbf">
+      <PackagePath>SettingsPage.xbf</PackagePath>
+      <Modified>2018-08-25T16:33:44.567</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\o\source\repos\App18\App18\bin\x86\Debug\StorageViewer.xbf">
       <PackagePath>StorageViewer.xbf</PackagePath>
-      <Modified>2018-08-18T16:04:06.212</Modified>
+      <Modified>2018-08-25T16:33:44.569</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -576,11 +580,11 @@
     <AppxPackagedFile Include="C:\Users\o\source\repos\App18\App18\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-08-18T13:32:03.793</Modified>
+      <Modified>2018-08-25T11:47:41.731</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\o\source\repos\App18\App18\bin\x86\Debug\Core\WikiStorage.exe">
       <PackagePath>WikiStorage.exe</PackagePath>
-      <Modified>2018-08-18T16:30:08.889</Modified>
+      <Modified>2018-08-25T17:20:17.308</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

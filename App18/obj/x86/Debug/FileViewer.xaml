@@ -8,21 +8,23 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid x:ConnectionId='1' x:Name="rootGrid">
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="2*" MinHeight="80"></RowDefinition>
             <RowDefinition Height="19*"></RowDefinition>
         </Grid.RowDefinitions>
+        
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Width="auto">
-            <AppBarButton x:ConnectionId='2' Grid.Row="0" HorizontalAlignment="Left" Icon="Back" Label="Go Back" VerticalAlignment="Stretch"                            />
-            <AppBarButton x:ConnectionId='3' HorizontalAlignment="Stretch" Icon="Send" Label="Export File" VerticalAlignment="Stretch"                            />
-            <AppBarButton x:ConnectionId='4' HorizontalAlignment="Stretch" Icon="Add" Label="Import File" VerticalAlignment="Stretch"                                />
-            <AppBarButton x:ConnectionId='5' Grid.Row="0" HorizontalAlignment="Center" Icon="Save" Label="Save To App Storage" VerticalAlignment="Stretch"                           Width="108"/>
-
+            <AppBarButton x:ConnectionId='3' Grid.Row="0" HorizontalAlignment="Left" Icon="GoToStart" Label="Go To Main Page" VerticalAlignment="Stretch"                            />
+            <AppBarButton x:ConnectionId='4' HorizontalAlignment="Stretch" Icon="Back" Label="View Storage" VerticalAlignment="Stretch"                                 />
+            <AppBarButton x:ConnectionId='5' HorizontalAlignment="Stretch" Icon="Send" Label="Export File" VerticalAlignment="Stretch"                            />
+            <AppBarButton x:ConnectionId='6' HorizontalAlignment="Stretch" Icon="Add" Label="Import File" VerticalAlignment="Stretch"                                />
+            <AppBarButton x:ConnectionId='7' Grid.Row="0" HorizontalAlignment="Center" Icon="Save" Label="Save To App Storage" VerticalAlignment="Stretch"                           Width="108"/>
+            <AppBarButton x:ConnectionId='8' HorizontalAlignment="Right" Icon="Setting" Label="Settings" VerticalAlignment="Stretch"                              />
         </StackPanel>
 
-        <TextBox x:ConnectionId='1' x:Name="editor" Grid.Row="1" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollBarVisibility="Visible"/>
-
+        <TextBox x:ConnectionId='2' x:Name="editor" Grid.Row="1" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollBarVisibility="Visible"/>
 
     </Grid>
 </Page>

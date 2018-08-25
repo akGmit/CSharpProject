@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="WikiStorage.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WikiStorage"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="rootGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" MinHeight="80"></RowDefinition>
+            <RowDefinition Height="19*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <AppBarButton HorizontalAlignment="Left" Icon="GoToStart" Label="Go to Main Page" VerticalAlignment="Stretch" Click="AppBarButton_GoToMain"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Grid.Row="1">
+            <TextBlock TextWrapping="Wrap" Text="Choose color:"/>
+            <ComboBox x:Name="colorsList" HorizontalAlignment="Left" VerticalAlignment="Stretch" SelectionChanged="colorsList_SelectionChanged" MinWidth="150"/>
+        </StackPanel>
+        
+    </Grid>
+</Page>

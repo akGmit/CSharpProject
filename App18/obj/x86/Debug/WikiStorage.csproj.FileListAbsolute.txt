@@ -232,3 +232,8 @@ c:\users\o\source\repos\App18\App18\obj\x86\Debug\MultipleQualifiersPerDimension
 c:\users\o\source\repos\App18\App18\obj\x86\Debug\HtmlAgilityPack.pri.xml
 c:\users\o\source\repos\App18\App18\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\o\source\repos\App18\App18\obj\x86\Debug\WikiStorage.csprojAssemblyReference.cache
+C:\Users\o\source\repos\App18\App18\obj\x86\Debug\SettingsPage.g.i.cs
+C:\Users\o\source\repos\App18\App18\obj\x86\Debug\SettingsPage.g.cs
+C:\Users\o\source\repos\App18\App18\obj\x86\Debug\SettingsPage.xaml
+C:\Users\o\source\repos\App18\App18\obj\x86\Debug\SettingsPage.xbf
+C:\Users\o\source\repos\App18\App18\bin\x86\Debug\SettingsPage.xbf

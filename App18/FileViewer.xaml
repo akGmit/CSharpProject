@@ -8,21 +8,23 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid x:Name="rootGrid">
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="2*" MinHeight="80"></RowDefinition>
             <RowDefinition Height="19*"></RowDefinition>
         </Grid.RowDefinitions>
+        
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Width="auto">
-            <AppBarButton Grid.Row="0" HorizontalAlignment="Left" Icon="Back" Label="Go Back" VerticalAlignment="Stretch" Click="AppBarButton_GoBack"/>
+            <AppBarButton Grid.Row="0" HorizontalAlignment="Left" Icon="GoToStart" Label="Go To Main Page" VerticalAlignment="Stretch" Click="AppBarButton_GoBack"/>
+            <AppBarButton HorizontalAlignment="Stretch" Icon="Back" Label="View Storage" VerticalAlignment="Stretch" Click="AppBarButton_ViewStorage"/>
             <AppBarButton HorizontalAlignment="Stretch" Icon="Send" Label="Export File" VerticalAlignment="Stretch" Click="AppBarButton_Export"/>
             <AppBarButton HorizontalAlignment="Stretch" Icon="Add" Label="Import File" VerticalAlignment="Stretch" Click="AppBarButton_ImportFile"/>
             <AppBarButton Grid.Row="0" HorizontalAlignment="Center" Icon="Save" Label="Save To App Storage" VerticalAlignment="Stretch" Click="AppBarButton_Save" Width="108"/>
-
+            <AppBarButton HorizontalAlignment="Right" Icon="Setting" Label="Settings" VerticalAlignment="Stretch" Click="AppBarButton_Settings"/>
         </StackPanel>
 
         <TextBox x:Name="editor" Grid.Row="1" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.HorizontalScrollBarVisibility="Visible"/>
-
 
     </Grid>
 </Page>

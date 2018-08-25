@@ -132,19 +132,21 @@ namespace WikiStorage.WikiStorage_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[5];
+            _typeNameTable = new string[6];
             _typeNameTable[0] = "App18.FileViewer";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "App18.MainPage";
-            _typeNameTable[4] = "App18.StorageViewer";
+            _typeNameTable[4] = "WikiStorage.SettingsPage";
+            _typeNameTable[5] = "App18.StorageViewer";
 
-            _typeTable = new global::System.Type[5];
+            _typeTable = new global::System.Type[6];
             _typeTable[0] = typeof(global::App18.FileViewer);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::App18.MainPage);
-            _typeTable[4] = typeof(global::App18.StorageViewer);
+            _typeTable[4] = typeof(global::WikiStorage.SettingsPage);
+            _typeTable[5] = typeof(global::App18.StorageViewer);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -181,7 +183,8 @@ namespace WikiStorage.WikiStorage_XamlTypeInfo
 
         private object Activate_0_FileViewer() { return new global::App18.FileViewer(); }
         private object Activate_3_MainPage() { return new global::App18.MainPage(); }
-        private object Activate_4_StorageViewer() { return new global::App18.StorageViewer(); }
+        private object Activate_4_SettingsPage() { return new global::WikiStorage.SettingsPage(); }
+        private object Activate_5_StorageViewer() { return new global::App18.StorageViewer(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -215,9 +218,16 @@ namespace WikiStorage.WikiStorage_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 4:   //  App18.StorageViewer
+            case 4:   //  WikiStorage.SettingsPage
                 userType = new global::WikiStorage.WikiStorage_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_StorageViewer;
+                userType.Activator = Activate_4_SettingsPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  App18.StorageViewer
+                userType = new global::WikiStorage.WikiStorage_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_StorageViewer;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
