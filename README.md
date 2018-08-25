@@ -6,9 +6,8 @@ WikiStorage
 Functions:
 
 	Save document to storage:
-		- WikiPedia html is processed and body containing 				text information is saved to app local storage.
+		- WikiPedia html is processed and body containing text information is saved to app local storage.
 	Storage page:
-		- View and manage documents saved to local storage.				Function to import documents to local storage 				from specified folder also available.
+		- View and manage documents saved to local storage. Function to import documents to local storage from specified folder also available.
 	Document viewer:
-		- View and edit saved documets. Edited documents can 				be saved to local storage or exported as text 				files to specified folder. Import text documents 			from system folders, edit them and save to apps 
-			local storage for later viewing.
+		- View and edit saved documets. Edited documents can be saved to local storage or exported as text files to specified folder. Import text documents from system folders, edit them and save to apps local storage for later viewing.
